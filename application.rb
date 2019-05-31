@@ -1,10 +1,9 @@
-class Application
+# frozen_string_literal: true
 
-  def call(env)
+class Application
+  def call(_env)
     resp = Rack::Response.new
-    resp.write "Hello, World"
+    resp.write 'Hello, my name is Nicholas Orochena.'
     resp.finish
   end
-
 end
-
